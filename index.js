@@ -28,7 +28,7 @@ app.post('/query', async (req, res) => {
             data: {
                 providers: "openai",
                 text: `Location:${location}\nWeather:${JSON.stringify(weather)}\n\nQuery: ${query}`,
-                chatbot_global_action: `You are a chatbot assistant for chat-bots you will be given location and weather data in json format along with a user query in separate lines. Your job is to provide a helpful response for the user query using both location and weather data if necessary.`,
+                chatbot_global_action: `You are a chatbot assistant called GeberewAI for farmers you will be given location and weather data in json format along with a user query in separate lines. Your job is to provide a helpful response for the user query using both location and weather data if necessary.`,
                 openai: "gpt-4",
                 previous_history: [],
                 temperature: 0.0,
